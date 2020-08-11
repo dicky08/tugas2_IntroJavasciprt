@@ -1,18 +1,54 @@
-const angka = ["Abigail", "Alexandra", "Alison", "Amanda", "Angela", "Bella", "Carol", "Caroline", "Carolyn", "Deirdre", "Diana", "Elizabeth", "Ella", "Faith", "Olivia", "Penelope"];
+const angka = [
+  "Abigail",
+  "Alexandra",
+  "Alison",
+  "Amanda",
+  "Angela",
+  "Bella",
+  "Carol",
+  "Caroline",
+  "Carolyn",
+  "Deirdre",
+  "Diana",
+  "Elizabeth",
+  "Ella",
+  "Faith",
+  "Olivia",
+  "Penelope",
+];
 
 function searchName(cari, limit, callback) {
-
   let sercing = angka.filter((m) => {
-    return m.toLowerCase()
-      .includes(cari.toLowerCase());
+    return m.toLowerCase().includes(cari.toLowerCase());
   });
-
-  // Slice Rumusnya (awal,akhir)
-  let limits = sercing.slice(0, limit);
-  callback(limits, sercing);
+  //[Alexandra,Amanda,Angela,Diana]
+  let str = [];
+  for (let i = 0; i < limit; i++) {
+    str.push(sercing[i]);
+  }
+  callback(str, sercing);
 }
 
 function showCall(result) {
   console.log(result);
 }
 searchName("an", 1, showCall);
+
+// const angka = ["Abigail", "Alexandra", "Alison", "Amanda", "Angela", "Bella", "Carol", "Caroline", "Carolyn", "Deirdre", "Diana", "Elizabeth", "Ella", "Faith", "Olivia", "Penelope"];
+
+// function searchName(cari, limit, callback) {
+
+//   let sercing = angka.filter((m) => {
+//     return m.toLowerCase()
+//       .includes(cari.toLowerCase());
+//   });
+
+//   // Slice Rumusnya (awal,akhir)
+//   let limits = sercing.slice(0, limit);
+//   callback(limits, sercing);
+// }
+
+// function showCall(result) {
+//   console.log(result);
+// }
+// searchName("an", 1, showCall);
