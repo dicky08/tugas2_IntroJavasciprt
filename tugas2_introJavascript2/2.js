@@ -29,13 +29,13 @@ function searchName(cari, limit, callback) {
       str.push(sercing[i]);
     }
   }
-  callback(str, sercing);
+  callback(str);
 }
 
 function showCall(result) {
   console.log(result);
 }
-searchName("an", 1, showCall);
+searchName("ca", 2, showCall);
 
 // const angka = ["Abigail", "Alexandra", "Alison", "Amanda", "Angela", "Bella", "Carol", "Caroline", "Carolyn", "Deirdre", "Diana", "Elizabeth", "Ella", "Faith", "Olivia", "Penelope"];
 
