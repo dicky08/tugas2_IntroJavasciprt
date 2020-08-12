@@ -2,7 +2,7 @@
 function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
   if (nilaiAwal > nilaiAkhir) {
     return "Nilai akhir harus lebih besar dari Nilai Awal";
-  } else if (dataArray.length < 5) {
+  } else if (dataArray.length <= 5) {
     return "data array kurang";
   } else {
     let arayBaru = dataArray.filter((data) => {
