@@ -19,7 +19,8 @@ const angka = [
 
 function searchName(cari, limit, callback) {
   let sercing = angka.filter((m) => {
-    return m.toLowerCase().includes(cari.toLowerCase());
+    return m.toLowerCase()
+      .includes(cari.toLowerCase());
   });
   //[Alexandra,Amanda,Angela,Diana]
   let str = [];
