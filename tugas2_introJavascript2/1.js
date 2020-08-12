@@ -2,27 +2,27 @@
 
 // 1 . Pada Array
 //     a) push // Menambah element terakhir pada array
-const arrPush = ["Dicky"];
+let arrPush = ["Dicky"];
 arrPush.push("Budi");
 // console.log(arr1);
 
 //     b) pop // Menghapus element terakhir pada array
-const arrPop = ["Dicky", "Budi"];
+let arrPop = ["Dicky", "Budi"];
 arrPop.pop();
-// console.log(arrPop);
+console.log(arrPop);
 
 //     c) shift // Menghapus element di awal array
-const arrShift = ["Dicky", "Budi"];
+let arrShift = ["Dicky", "Budi"];
 arrShift.shift();
 // console.log(arrShift);
 
 //     d) unshift // Menambah element di awal array
-const arrUnShift = ["Dicky"];
+let arrUnShift = ["Dicky"];
 arrUnShift.unshift("Budi");
 // console.log(arrUnShift);
 
 //     e) sort // Mengurutkan isi array
-const angkaSort = [1, 3, 5, 2, 7, 4, 9];
+let angkaSort = [1, 3, 5, 2, 7, 4, 9];
 angkaSort.sort();
 // console.log(angkaSort);
 
