@@ -32,7 +32,7 @@ function searchName(cari, limit, callback) {
 function showCall(result) {
   console.log(result);
 }
-searchName("an", 1, showCall);
+searchName("an", 5, showCall);
 
 // const angka = ["Abigail", "Alexandra", "Alison", "Amanda", "Angela", "Bella", "Carol", "Caroline", "Carolyn", "Deirdre", "Diana", "Elizabeth", "Ella", "Faith", "Olivia", "Penelope"];
 
