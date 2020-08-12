@@ -11,4 +11,4 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
     return arayBaru.sort((a, b) => a - b);
   }
 }
-console.log(seleksiNilai(5, 20, [2, 25, 2, 14, 17, 30, 8]));
+console.log(seleksiNilai(25, 20, [2, 25, 2, 14, 17, 30, 8]));
