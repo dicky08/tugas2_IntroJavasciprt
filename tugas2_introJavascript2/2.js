@@ -23,8 +23,10 @@ function searchName(cari, limit, callback) {
   });
   //[Alexandra,Amanda,Angela,Diana]
   let str = [];
-  for (let i = 0; i < limit; i++) {
-    str.push(sercing[i]);
+  for (let i = 0; i < sercing.length; i++) {
+    if (i + 1 <= limit) {
+      str.push(sercing[i]);
+    }
   }
   callback(str, sercing);
 }
@@ -32,7 +34,7 @@ function searchName(cari, limit, callback) {
 function showCall(result) {
   console.log(result);
 }
-searchName("an", 5, showCall);
+searchName("an", 1, showCall);
 
 // const angka = ["Abigail", "Alexandra", "Alison", "Amanda", "Angela", "Bella", "Carol", "Caroline", "Carolyn", "Deirdre", "Diana", "Elizabeth", "Ella", "Faith", "Olivia", "Penelope"];
 
