@@ -4,12 +4,12 @@
 //     a) push // Menambah element terakhir pada array
 let arrPush = ["Dicky"];
 arrPush.push("Budi");
-// console.log(arr1);
+// console.log(arrPush);
 
 //     b) pop // Menghapus element terakhir pada array
 let arrPop = ["Dicky", "Budi"];
 arrPop.pop();
-console.log(arrPop);
+// console.log(arrPop);
 
 //     c) shift // Menghapus element di awal array
 let arrShift = ["Dicky", "Budi"];
